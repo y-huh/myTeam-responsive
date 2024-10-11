@@ -1,0 +1,99 @@
+.hero-section {
+    background-image: url(../images/hero-bg2.svg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: calc(50% - 749px) top;
+    
+}
+.hero {
+    padding-bottom: 250px;
+    
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    background-image: url(../images/hero-bg1.svg);
+    background-repeat: no-repeat;
+    background-size: 358px;
+    background-position: right bottom;
+}
+.hero > h2 {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    color: #fff;
+    
+    
+}
+.hero-title-color {
+    color: #F67E7E;
+}
+.hero-content-wrapper {
+    width: 445px;
+}
+.hero-content-wrapper > span{
+    display: inline-block;
+    margin-bottom: 79px;
+    width: 50px;
+    height: 4px;
+    background-color: #79C8C7;
+}
+.hero-content-wrapper{
+    margin: 0 100px 0 100px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: white;
+}
+@media (max-width:770px){
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-position: bottom center;
+        background-size: 358px 100px;
+        padding-bottom: 197px;
+    }
+    .hero-content-wrapper>span{
+        display: none;
+    }
+    .hero>h2{
+        margin-bottom: 24px;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 56px;
+        
+    }
+    .hero-content-wrapper>p{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 28px;
+    max-width: 457px;
+    text-align: center;
+    margin: 0 auto;    
+    }
+
+    
+}
+    @media (max-width:546px){
+        .hero>h2{
+            margin-bottom: 18px;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 40px;
+            
+            
+        }
+            .hero-content-wrapper>p{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 28px;
+    max-width: 75%;
+    margin: 0 auto;
+
+
+        }
+        .hero{
+            background-size: 100%;
+        }
+        
+    }

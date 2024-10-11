@@ -1,0 +1,43 @@
+
+.ready-section {
+    transition: all 0.3s;
+    height: 200px;
+background-color: #F67E7E;
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../images/ready1.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.ready-wrapper> h2 {
+    color:#012F34 ;
+font-size: 48px;
+font-weight: 700;
+line-height: 48px;
+
+}
+.ready-btn {
+    width: 153px;
+    padding: 9px 0 11px;
+    border: 2px solid #002539;
+    border-radius: 30px;
+    text-align: center;
+    color: #002539;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    transition: all 0.3s;
+
+}
+.ready-btn:hover {
+    background-color: #004047;
+    color: white;
+}
+
+.ready-wrapper {
+    display: flex;
+justify-content: space-between;
+align-items: center;
+
+}

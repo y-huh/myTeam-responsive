@@ -1,0 +1,65 @@
+
+.results-section {
+    padding: 140px 0;
+    color: #004047;
+    background-image: url(../images/result-bg.svg),url(../images/result-bg2.svg);
+    background-repeat: no-repeat;
+    background-size: 147px , 200px 100px;
+    background-position:left top ,right bottom;
+}
+.results-title {
+font-size: 48px;
+font-weight: 700;
+line-height: 48px;
+text-align: center;
+color: #fff;
+margin-bottom: 56px;
+
+}
+.results-title > span {
+    color: #79C8C7;
+
+}
+.results-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.results-item {
+    padding-top: 36px;
+    width: 350px;
+    text-align: center;
+    background-image: url(../images/tick.svg);
+    background-repeat: no-repeat;
+    background-size: 67px 56px;
+    background-position: top ;
+
+
+}
+.results-list-body {
+font-size: 15px;
+font-weight: 600;
+line-height: 25px;
+color: #fff;
+margin-bottom: 24px;
+
+}
+.results-list-body ~ strong {
+    display: inline-block;
+    color: #79C8C7;
+font-size: 18px;
+font-weight: 700;
+line-height: 28px;
+margin-bottom: 2px;
+
+}
+
+.results-item-job {
+font-size: 13px;
+font-style: italic;
+font-weight: 500;
+line-height: 18px;
+color: #fff;
+margin-bottom: 32px;
+
+}
