@@ -45,7 +45,7 @@ line-height: 25px;
     flex-direction: column;
     justify-content: space-between;
     gap: 46px;
-    align-items: end;
+    align-items: center;
 
 
 }
@@ -118,6 +118,11 @@ color: #F67E7E;
         align-items: center;
         gap: 24px;
     }    
+    .footer-item-sm{
+        align-items: center;
+        width: 100%;
+        display: flex;
+    }
     
     .footer-item-adress > p{
         text-align: center;

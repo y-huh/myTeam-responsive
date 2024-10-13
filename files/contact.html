@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/contact.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../images/myteam.svg" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 
     <title>Contact - My team</title>
 </head>
@@ -16,26 +16,48 @@
     <main>
 
     
-    <header class="site-header">
-        <div class="container">
-            <div class="header">
-                <div class="header-logo-wrapper">
-                    <a href="/">
-                        <img src="../images/myteam.svg" alt="#" data-aos="fade-right" data-aos-duration="3000">
-                    </a>
-                    <ul class="header-list">
-                        <li class="header-item">
-                            <a class="header-link" href="../index.html" data-aos="fade-up" data-aos-duration="3000">home</a>
+        <header class="site-header">
+            <div class="container">
+                <div class="header">
+                    <div class="header-logo-wrapper">
+                        <a href="#">
+                            <img class="site-logo" src="../images/myteam.svg" alt="#" data-aos="fade-right" data-aos-duration="3000">
+                        </a>
+                        <ul class="header-list">
+                            <li class="header-item">
+                                <a class="header-link" href="/" data-aos="fade-up" data-aos-duration="3000">home</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-link" href="/" data-aos="fade-up" data-aos-duration="3000">about</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="header-btn" href="./files/contact.html" data-aos="fade-left" data-aos-duration="3000">contact us</a>
+                    <button onclick="HandleHamburgerButton()" class="hamburger-icon" data-aos="fade-left" data-aos-duration="2000">
+                        <img src="../images/Group 2.svg" alt="" width="20px" height="17px">
+                    </button>
+                </div>
+            </div>
+            <div id="wrapper" class="navbar-wrapper">
+                <div class="navbar">
+                    <button onclick="CloseBtn()" class="navbar-close">
+                        <img src="../images/x.svg" alt="" width="16px" height="16px">
+                    </button>
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a class="navbar-link header-link" href="/" data-aos="fade-up" data-aos-duration="3000">home</a>
                         </li>
-                        <li class="header-item">
-                            <a class="header-link" href="/" data-aos="fade-up" data-aos-duration="3000">about</a>
+                        <li class="navbar-item">
+                            <a class="navbar-link header-link" href="/" data-aos="fade-up" data-aos-duration="3000">about</a>
                         </li>
                     </ul>
+                        <a class="navbar-btn" href="#" data-aos="fade-left" data-aos-duration="3000">contact us</a>
+    
+                    
+    
                 </div>
-                <a class="header-btn" href="./contact.html" data-aos="fade-left" data-aos-duration="3000">contact us</a>
             </div>
-        </div>
-    </header>
+        </header>
 
     <section class="contact-section">
         <div class="container">
@@ -82,20 +104,24 @@
     <footer class="site-footer">
         <div class="container">
             <div class="footer-wrapper">
-                <ul class="footer-list">
-                    <li class="footer-item">
-                        <img src="../images/myteam.svg " alt="myteam" width="140px" height="40px">
+                
+                <div class="footer-list">
+                    <div class="footer-item-wrapper">
+                    <div class="footer-item">
+                        <img src="../images/myteam.svg" alt="myteam" width="140px" height="40px">
                         <div class="home-wrapper">
-                            <a class="footer-link" href="../index.html">home</a>
+                            <a class="footer-link" href="/">home</a>
                             <a class="footer-link" href="/">about</a>
                         </div>
 
 
-                    </li>
-                    <li class="footer-item-adress">
+                    </div>
+                    <div class="footer-item-adress">
                         <p>987 Hillcrest Lane <br> Irvine, CA <br> California 92714 <br> Call Us : 949-833-7432</p>
-                    </li>
-                    <li class="footer-item-sm">
+                    </div>    
+                    </div>
+                    
+                    <div class="footer-item-sm">
                         <div class="sm-wrapper">
                             <a class="social-link" href="">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -126,15 +152,16 @@
 
                         <a href="#">Copyright 2020. All Rights Reserved</a>
 
-                    </li>
+                    </div>
 
-                </ul>
+                </div>
 
             </div>
         </div>
 
     </footer>
 </main>
+<script src="../js/main.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
