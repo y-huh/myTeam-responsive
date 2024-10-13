@@ -34,6 +34,12 @@ line-height: 25px;
 
     
 }
+.footer-item-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 125px;
+
+}
 .footer-item-sm {
     display: flex;
     flex-direction: column;
@@ -80,4 +86,42 @@ line-height: 28px;
 
 .social-link:hover {
 color: #F67E7E;
+    }
+
+
+    @media (max-width:847px){
+        .site-footer{
+            padding: 56px 19px;
+        }
+        .footer-list{
+            flex-direction: column;
+        }
+        .footer-item-sm{
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .footer-item-wrapper{
+            width: 100%;
+            justify-content: space-between;
+        }
+        .footer-item-adress > p{
+            text-align: right;
+        }
+    }
+    @media (max-width:511px){
+    .footer-item-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }    
+    
+    .footer-item-adress > p{
+        text-align: center;
+    }    
+
+
     }
